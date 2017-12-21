@@ -14,6 +14,7 @@
         <header id="banner" class="body">
                 <h1><a href="/">Beeeta Blog </a></h1>
                 <nav><ul>
+                    <li><a href="/category/ml.html">ML</a></li>
                     <li><a href="/category/python.html">python</a></li>
                     <li><a href="/category/python_web.html">python_web</a></li>
                 </ul></nav>
@@ -23,8 +24,8 @@
                 <article>
                     <h1 class="entry-title"><a href="/duo-xian-cheng-yu-duo-jin-cheng.html">多线程与多进程</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+01:00">
-                Published: 三 06 十二月 2017
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
         </abbr>
 
         <address class="vcard author">
@@ -173,14 +174,77 @@ e.set() # 在e.set()方法未执行之前e.wait()方法会被阻塞
 
             <li><article class="hentry">
                 <header>
+                    <h1><a href="/keras.html" rel="bookmark"
+                           title="Permalink to Keras">Keras</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/betalun.html">betalun</a>
+        </address>
+<p>In <a href="/category/ml.html">ML</a>.</p>
+
+</footer><!-- /.post-info -->                <blockquote>
+<p>keras简化神经网络模型构建的过程</p>
+</blockquote>
+<h2>用keras进行数据训练和验证的主要步骤</h2>
+<h3>搭结构</h3>
+<div class="highlight"><pre><span></span>model---layers
+      --layers
+      --layers
+      --layers
+</pre></div>
+
+
+<h3>编译</h3>
+<div class="highlight"><pre><span></span><span class="na">.compile</span><span class="p">(</span>
+      <span class="nf">optimizer</span><span class="err">=优化器</span><span class="p">,</span>
+      <span class="nf">loss</span><span class="err">=损失函数</span><span class="p">,</span>
+      <span class="nf">metrics</span><span class="err">=度量</span>
+<span class="err">)</span>
+</pre></div>
+
+
+<h3>数据训练</h3>
+<div class="highlight"><pre><span></span><span class="na">.fit</span><span class="p">(</span>
+      <span class="err">[</span><span class="nf">data</span><span class="err">=</span><span class="p">]</span><span class="err">训练输入</span><span class="p">,</span>
+      <span class="err">[</span><span class="nf">labels</span><span class="err">=</span><span class="p">]</span><span class="err">训练标记</span><span class="p">,</span>
+      <span class="nf">epochs</span><span class="err">=数据轮循次数</span><span class="p">,</span>
+      <span class="nf">batch_size</span><span class="err">=数据组大小</span>
+<span class="err">)</span>
+</pre></div>
+
+
+<h3>验证</h3>
+<p>.evaluate(
+      [data=]训练输入
+      [labels=]训练标记
+      batch_size=数据组大小
+)</p>
+<hr>
+<h2>使用中的注意事项</h2>
+<p>1.理解机器学习及深度学习中的各种概念。比如：有监督学习，无监督学习
+分类，聚类，回归；神经元模型，多层感知器，BP算法；目标函数（损失函数），
+激活函数，梯度下降发；全连接网络 …</p>
+                <a class="readmore" href="/keras.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
                     <h1><a href="/monkey-patch.html" rel="bookmark"
                            title="Permalink to monkey patch">monkey patch</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+01:00">
-                Published: 三 06 十二月 2017
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
         </abbr>
 
         <address class="vcard author">
@@ -243,8 +307,8 @@ e.set() # 在e.set()方法未执行之前e.wait()方法会被阻塞
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+01:00">
-                Published: 三 06 十二月 2017
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
         </abbr>
 
         <address class="vcard author">
@@ -266,8 +330,8 @@ e.set() # 在e.set()方法未执行之前e.wait()方法会被阻塞
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+01:00">
-                Published: 三 06 十二月 2017
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
         </abbr>
 
         <address class="vcard author">
@@ -303,8 +367,8 @@ object是一切对象的父类型，那么type与object之间的关系是什么�
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2017-12-06T00:00:00+01:00">
-                Published: 三 06 十二月 2017
+        <abbr class="published" title="2017-12-21T00:00:00+01:00">
+                Published: 周四 21 十二月 2017
         </abbr>
 
         <address class="vcard author">
@@ -357,7 +421,7 @@ object是一切对象的父类型，那么type与object之间的关系是什么�
                 <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2017-11-30T00:00:00+01:00">
-                Published: 四 30 十一月 2017
+                Published: 周四 30 十一月 2017
         </abbr>
 
         <address class="vcard author">
@@ -401,7 +465,7 @@ object是一切对象的父类型，那么type与object之间的关系是什么�
                 <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2017-11-23T00:00:00+01:00">
-                Published: 四 23 十一月 2017
+                Published: 周四 23 十一月 2017
         </abbr>
 
         <address class="vcard author">
@@ -460,8 +524,8 @@ datetime.date(2017 …</pre></div>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2017-11-06T00:00:00+01:00">
-                Published: 一 06 十一月 2017
+        <abbr class="published" title="2017-11-21T00:00:00+01:00">
+                Published: 周二 21 十一月 2017
         </abbr>
 
         <address class="vcard author">
